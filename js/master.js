@@ -1,8 +1,10 @@
-//change navBar color
+let el = document.querySelector(".scroll");
+let height =
+  document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
 window.addEventListener("scroll", () => {
-  document
-    .querySelector("header")
-    .classList.toggle("change-nav-color", scrollY > 100);
+  let scroller = document.documentElement.scrollTop;
+  el.style.width = `${(scroller / height) * 100}%`;
 });
 
 //show search icon
