@@ -27,7 +27,7 @@ html {
 }
 /* header */
 header #menu-bar {
-    color: var(---white);
+    color: #222;
     border-radius: 5px;
     border: 1px solid #fff;
     padding: 5px 1.2rem;
